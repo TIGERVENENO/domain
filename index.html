@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabSaver - Save and restore your tab sessions</title>
+    <meta name="description" content="TabSaver - Chrome extension that allows you to save and restore tab sessions. Never lose important tabs again!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📁</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="logo">
+                        <span class="logo-icon">📁</span>
+                        <h1 class="title">TabSaver</h1>
+                    </div>
+                    <p class="subtitle">Save and restore your tab sessions</p>
+                </div>
+            </div>
+            
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h2 class="hero-title">Never lose important tabs again</h2>
+                <p class="hero-description">
+                    Save groups of tabs as sessions and restore them with one click. 
+                    Perfect for work, study, and research.
+                </p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary install-btn" id="installBtn">
+                        <span class="btn-icon">⬇️</span>
+                        Install Extension
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Features Section -->
+            <section class="features-section">
+                <div class="section-header">
+                    <h2>Key Features</h2>
+                    <p>Everything you need for efficient tab management</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h3>Save Sessions</h3>
+                        <p>Save groups of tabs as named sessions. Choose which tabs to include in each session.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Quick Restore</h3>
+                        <p>Restore saved sessions with one click in the current window or open in a new window.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3>Search & Sort</h3>
+                        <p>Quickly find the tabs and sessions you need with search. Sort by date, name, or usage.</p>
+                    </div>
+                    
+                    <div class="feature-card premium">
+                        <div class="feature-icon">⚡</div>
+                        <div class="premium-badge">Premium</div>
+                        <h3>Export & Import</h3>
+                        <p>Export sessions to JSON files and import them on other devices for seamless sync.</p>
+                    </div>
+                    
+                    <div class="feature-card premium">
+                        <div class="feature-icon">∞</div>
+                        <div class="premium-badge">Premium</div>
+                        <h3>Unlimited Sessions</h3>
+                        <p>Create unlimited number of sessions without any restrictions or limits.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How it works Section -->
+            <section class="how-it-works">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p>Simple steps to get started</p>
+                </div>
+                
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Select Tabs</h3>
+                        <p>Open the extension and select the tabs you want to save in a session</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Name Your Session</h3>
+                        <p>Enter a meaningful name for your session to easily find it later</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Save Session</h3>
+                        <p>Click the "Save" button and your session will be available for restoration</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Restore When Needed</h3>
+                        <p>Open the extension and restore any saved session with a single click</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Section -->
+            <section class="pricing-section">
+                <div class="section-header">
+                    <h2>Pricing</h2>
+                    <p>Choose the plan that fits your needs</p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <div class="plan-name">Free</div>
+                        <div class="plan-price">
+                            <span class="price">$0</span>
+                            <span class="period">/forever</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>✅ Up to 5 sessions</li>
+                            <li>✅ Save and restore</li>
+                            <li>✅ Search and sort</li>
+                        </ul>
+                        <button class="btn btn-secondary plan-btn">Get Started Free</button>
+                    </div>
+                    
+                    <div class="price-card">
+                        <div class="plan-name">Premium Monthly</div>
+                        <div class="plan-price">
+                            <span class="price">$2.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li>✅ Unlimited sessions</li>
+                            <li>✅ Export to JSON</li>
+                            <li>✅ Import sessions</li>
+                            <li>✅ Priority support</li>
+                            <li>✅ All free features</li>
+                        </ul>
+                        <button class="btn btn-premium plan-btn">Choose Monthly</button>
+                    </div>
+                    
+                    <div class="price-card recommended">
+                        <div class="recommended-badge">Best Value</div>
+                        <div class="plan-name">Premium Yearly</div>
+                        <div class="plan-price">
+                            <span class="price">$24.99</span>
+                            <span class="period">/year</span>
+                        </div>
+                        <div class="plan-savings">Save 30%</div>
+                        <ul class="plan-features">
+                            <li>✅ Unlimited sessions</li>
+                            <li>✅ Export to JSON</li>
+                            <li>✅ Import sessions</li>
+                            <li>✅ Priority support</li>
+                            <li>✅ All free features</li>
+                        </ul>
+                        <button class="btn btn-premium plan-btn">Choose Yearly</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Install TabSaver now and never lose important tabs again</p>
+                    <div class="cta-actions">
+                        <a href="#" class="btn btn-primary install-btn-large" id="installBtnLarge">
+                            <span class="btn-icon">⬇️</span>
+                            Install for Free
+                        </a>
+                    </div>
+                    <div class="cta-note">
+                        <p>Available on Chrome Web Store • Free installation • No registration required</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-icon">📁</span>
+                        <span class="logo-text">TabSaver</span>
+                    </div>
+                    <p class="footer-description">Efficient tab management for Chrome</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Support</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TabSaver. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
