@@ -124,7 +124,9 @@ body {
 
 /* Header */
 .header {
-    background: var(--gradient-primary);
+    background: linear-gradient(45deg, #667eea, #764ba2, #667eea, #764ba2);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
     color: var(--color-background);
     padding: var(--space-2xl) var(--space-4xl);
     text-align: center;
@@ -1057,5 +1059,24 @@ body {
 [data-theme="dark"] .demo-screenshot {
     background: var(--color-background);
     border-color: var(--color-border);
+}
+
+/* Animations */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
