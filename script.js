@@ -76,7 +76,7 @@ class TabSaverLanding {
         // Simulate redirect delay
         setTimeout(() => {
             // Replace with actual Chrome Web Store URL
-            window.open('https://chrome.google.com/webstore/category/extensions', '_blank');
+            window.open('https://chromewebstore.google.com/detail/tab-saver/knljchkecgbghkbfombedjjekbnbmojg', '_blank');
         }, 1000);
     }
 
